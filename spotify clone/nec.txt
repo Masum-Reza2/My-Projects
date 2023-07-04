@@ -1,0 +1,16 @@
+songIndex = parseInt(e.target.id);
+        audioElement.src = `songs/${songIndex}.mp3`;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        gif.style.opacity = '1'
+        masterSongName.innerHTML = songs[songIndex].songName;
+        masterPLay.src = 'icons/this.png';
+        element.src = 'icons/this.png';
+
+
+
+                <div class="flex items-center space-x-3 -translate-x-80">
+            <!-- using js make opacity 1 when music playing -->
+            <img class="invert opacity-0 " src="/icons/icons8-audio-wave.gif" alt="" id="gif">
+            <span id="masterSongName" class="font-[font-family: 'Varela Round', sans-serif;] font-bold shadow-sm shadow-black hover:cursor-pointer" >song name</span>
+        </div>

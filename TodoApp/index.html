@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body class="bg-slate-400">
+    <img id="menushow" class="bg-green-500 shadow-sm shadow-black w-12 h-7 absolute right-4 mt-4 rounded-md text-center md:hidden hover:cursor-pointer hover:-translate-y-[0.13rem] active:translate-y-[0.15rem] animate-bounce" src="./img/icons8-hamburger-menu-192.png" alt="">
+    <!-- navbar -->
+    <nav id="mynavbar" class="hidden  text-white bg-blue-500 mt-3 w-[94vw] md:w-[98vw] m-auto rounded-md shadow-md shadow-black md:h-16 md:flex md:items-center md:justify-between">
+        <ul class="space-y-3 md:space-y-0 font-bold md:flex md:items-center md:justify-center md:space-x-5" style="text-shadow: 1px 1px 1px red;">
+            <li class="hidden md:flex"></li>
+            <li
+                class="text-center shadow-sm shadow-black hover:text-fuchsia-400 hover:-translate-y-[0.13rem] active:translate-y-[0.13rem] cursor-pointer rounded-sm">
+                Home</li>
+            <li
+                class="text-center shadow-sm shadow-black hover:text-fuchsia-400 hover:-translate-y-[0.13rem] active:translate-y-[0.13rem] cursor-pointer rounded-sm">
+                About</li>
+            <li
+                class="text-center shadow-sm shadow-black hover:text-fuchsia-400 hover:-translate-y-[0.13rem] active:translate-y-[0.13rem] cursor-pointer rounded-sm">
+                Services</li>
+            <li
+                class="text-center shadow-sm shadow-black hover:text-fuchsia-400 hover:-translate-y-[0.13rem] active:translate-y-[0.13rem] cursor-pointer rounded-sm">
+                Projects</li>
+        </ul>
+        <ul class="hidden md:flex -translate-x-20 space-x-5 font-bold">
+            <button class="text-center shadow-sm shadow-black hover:text-fuchsia-400 hover:-translate-y-[0.13rem] active:translate-y-[0.13rem] w-20 cursor-pointer rounded-sm" style="text-shadow: 1px 1px 1px red;">More</button>
+            <button class="text-center shadow-sm shadow-black hover:text-fuchsia-400 hover:-translate-y-[0.13rem] active:translate-y-[0.13rem] w-20 cursor-pointer rounded-sm" style="text-shadow: 1px 1px 1px red;">E-mail</button>
+        </ul>
+
+    </nav>
+
+    <section class="flex flex-col items-center mt-5">
+        <input type="text" name="" id="inputeNote" class=" h-20 w-[90vw] text-center bg-slate-500 font-bold text-xl rounded-lg shadow-md shadow-black" placeholder="Write your notes here" style="text-shadow: 1px 1px 1px red;">
+    </section>
+
+    <section class=" flex flex-row space-x-3 mt-5 items-center justify-center font-bold" style="text-shadow: 1px 1px 1px blue;">
+        <button class="activebtn h-7 w-20 bg-red-500 shadow-sm shadow-black rounded-md hover:-translate-y-[0.10rem] active:translate-y-[0.15rem]">Save</button>
+        <button class="activebtn h-7 w-20 bg-red-500 shadow-sm shadow-black rounded-md hover:-translate-y-[0.10rem] active:translate-y-[0.15rem]">Delete All</button>
+        <button class="activebtn h-7 w-20 bg-red-500 shadow-sm shadow-black rounded-md hover:-translate-y-[0.10rem] active:translate-y-[0.15rem]">Show All</button>
+    </section>
+
+    <section class="flex items-center justify-center mt-5 font-bold text-center text-lg" style="text-shadow: 1px 1px 1px red;">
+        <div id="PushNote" class="w-[90vw] bg-purple-500 rounded-md shadow-md shadow-black lg:h-[50vh]">
+            <p>notes will appear here</p>
+        </div>
+    </section>
+
+    <div id="Infobox" class=" h-7 w-full bg-red-500 text-center absolute bottom-0 font-bold shadow-sm shadow-black mb-1 lg:w-80 lg:h-80 lg:rounded-full lg:items-center lg:justify-center lg:flex lg:absolute lg:bottom-0 lg:animate-bounce lg:text-3xl lg:text-white" style="text-shadow: 1px 1px 1px red;">infobox</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

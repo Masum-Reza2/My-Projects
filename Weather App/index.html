@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body class="bg-gray-300">
+    <nav
+        class="flex flex-col md:flex-row justify-between shadow-md bg-white shadow-black h-14 items-center space-y-5 md:space-y-0">
+
+        <div>
+            <ul class="flex md:translate-x-5 md:space-x-5">
+                <li class="font-bold hover:cursor-pointer shadow-sm rounded-md shadow-black hover:-translate-y-[0.13rem] text-black active:translate-y-1 visited:bg-yellow-300"
+                    style="text-shadow: 1px 1px 1px red;">Weather App</li>
+                <li class="font-bold hover:cursor-pointer shadow-sm rounded-md shadow-black hover:-translate-y-[0.13rem] text-black active:translate-y-1 visited:bg-yellow-300"
+                    style="text-shadow: 1px 1px 1px red;">Home</li>
+                <li class=" hover:cursor-pointer shadow-sm rounded-md shadow-black hover:-translate-y-[0.13rem] text-black font-bold opademo-70 active:translate-y-1 visited:bg-yellow-300"
+                    style="text-shadow: 1px 1px 1px red;">About this App</li>
+                <li class=" hover:cursor-pointer shadow-sm rounded-md shadow-black hover:-translate-y-[0.13rem] text-black font-bold opademo-70 active:translate-y-1 visited:bg-yellow-300"
+                    style="text-shadow: 1px 1px 1px red;">Guide usage</li>
+            </ul>
+        </div>
+        <div class="flex items-center justify-center md:-translate-x-16 md:space-x-7">
+            <span class="font-bold shadow-sm shadow-black rounded-md translate-x-5 " style="text-shadow: 1px 1px 1px red;">City:</span><input type="text" name="" id="rearchwrite" class="h-7 w-28 bg-stone-400 shadow-sm shadow-black rounded-md text-center text-black font-bold text-xl" style="text-shadow: 1px 1px 1px red;">
+            <span class="font-bold shadow-sm shadow-black rounded-md translate-x-5 " style="text-shadow: 1px 1px 1px red;">Country Code:</span><input type="text" name="" id="ctcode" class="h-7 w-28 bg-stone-400 shadow-sm shadow-black rounded-md text-center text-black font-bold text-xl" style="text-shadow: 1px 1px 1px red;">
+            <button
+                class="shadow-sm shadow-black h-7 w-28 rounded-md hover:-translate-y-[0.13rem] font-bold text-xl text-black active:translate-y-1"
+                style="text-shadow: 1px 1px 1px red;">Search</button>
+        </div>
+
+    </nav> <!--Navbar style done  -->
+
+    <section class="flex flex-col items-center justify-center mt-10">
+        <h1 id="highlight" class=" animate-bounce text-4xl shadow-sm shadow-black font-bold" style="text-shadow: 1px 1px 1px red;">Weather of
+            your desire</h1>
+        <div class="flex flex-row mt-7">
+            <div class="h-72 w-96 bg-white  m-2 shadow-md rounded-lg shadow-black">
+
+                <h1 class="text-center text-2xl font-bold w-full shadow-sm shadow-black"
+                    style="text-shadow: 1px 1px 1px blue;">temperatues</h1>
+                <div class="flex flex-col items-center justify-demoenter space-y-2 mt-9 font-bold "
+                    style="text-shadow: 1px 1px 1px blueviolet;">
+                    <p class=" tempshow w-full shadow-sm shadow-black text-center text-3xl">demo</p>
+                    <p class=" tempshow w-full shadow-sm shadow-black text-center">demo</p>
+                    <p class=" tempshow w-full shadow-sm shadow-black text-center">demo</p>
+                    <p class=" tempshow w-full shadow-sm shadow-black text-center">demo</p>
+                </div>
+            </div>
+            <div class="h-72 w-96 bg-white  m-2 shadow-md rounded-lg shadow-black">
+
+                <h1 class="text-center text-2xl font-bold w-full shadow-sm shadow-black"
+                    style="text-shadow: 1px 1px 1px blue;">Humidity info</h1>
+                <div class="flex flex-col items-center justify-center space-y-2 mt-9 font-bold "
+                    style="text-shadow: 1px 1px 1px blueviolet;">
+                    <p class=" humashow w-full shadow-sm shadow-black text-center text-3xl">demo</p>
+                    <p class=" humashow w-full shadow-sm shadow-black text-center">demo</p>
+                    <p class=" humashow w-full shadow-sm shadow-black text-center">demo</p>
+                    <p class=" humashow w-full shadow-sm shadow-black text-center">demo</p>
+                </div>
+            </div>
+            <div class="h-72 w-96 bg-white  m-2 shadow-md rounded-lg shadow-black">
+
+                <h1 class="text-center text-2xl font-bold w-full shadow-sm shadow-black"
+                    style="text-shadow: 1px 1px 1px blue;">Wind info</h1>
+                <div class="flex flex-col items-center justify-center space-y-2 mt-9 font-bold "
+                    style="text-shadow: 1px 1px 1px blueviolet;">
+                    <p class=" windshow w-full shadow-sm shadow-black text-center text-3xl">demo</p>
+                    <p class=" windshow w-full shadow-sm shadow-black text-center">demo</p>
+                    <p class=" windshow w-full shadow-sm shadow-black text-center">demo</p>
+                    <p class=" windshow w-full shadow-sm shadow-black text-center">demo</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> <!-- first section demo -->
+
+    <section class="flex flex-col items-center justify-center mt-6">
+        <h1 class="font-bold text-3xl shadow-sm shadow-black h-10" style="text-shadow: 1px 1px 1px red;">Weather of other common places</h1>
+
+        <div class="w-[92vw] h-60 bg-white shadow-sm shadow-black my-10 rounded-md">
+            <table class="w-full h-full font-bold" style="text-shadow: 1px 1px 1px purple;">
+                <thead>
+                    <tr>
+                        <td class="text-center shadow-sm shadow-black font-bold text-2xl">City</td>
+                        <td class="text-center shadow-sm shadow-black font-bold text-2xl">temp</td>
+                        <td class="text-center shadow-sm shadow-black font-bold text-2xl">wind</td>
+                        <td class="text-center shadow-sm shadow-black font-bold text-2xl">velocity</td>
+                        <td class="text-center shadow-sm shadow-black font-bold text-2xl">strome</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class=" demoshow text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minortemp text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minowind text-center shadow-sm shadow-black">demo</td>
+                        <td class=" velo text-center shadow-sm shadow-black">demo</td>
+                        <td class=" stromee text-center shadow-sm shadow-black">demo</td>
+                    </tr>
+                    <tr>
+                        <td class=" demoshow text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minortemp text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minowind text-center shadow-sm shadow-black">demo</td>
+                        <td class=" velo text-center shadow-sm shadow-black">demo</td>
+                        <td class=" stromee text-center shadow-sm shadow-black">demo</td>
+                    </tr>
+                    <tr>
+                        <td class=" demoshow text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minortemp text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minowind text-center shadow-sm shadow-black">demo</td>
+                        <td class=" velo text-center shadow-sm shadow-black">demo</td>
+                        <td class=" stromee text-center shadow-sm shadow-black">demo</td>
+                    </tr>
+                    <tr>
+                        <td class=" demoshow text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minortemp text-center shadow-sm shadow-black">demo</td>
+                        <td class=" minowind text-center shadow-sm shadow-black">demo</td>
+                        <td class=" velo text-center shadow-sm shadow-black">demo</td>
+                        <td class=" stromee text-center shadow-sm shadow-black">demo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> <!--second section done-->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
